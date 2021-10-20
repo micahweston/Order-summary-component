@@ -7,73 +7,96 @@ body {
 }
 
 .container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    width: 30%;
-    padding-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    border: 0 transparent white;
-    border-radius: 15px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border: 0 transparent white;
+  border-radius: 15px;
 }
 
-.card-img img{
-    width: 100%;
-    display: inline-block;
-    border-top: 0 transparent white;
-    border-radius: 15px 15px 0 0;
-    margin-bottom: 1.5rem;
+.card-img img {
+  width: 100%;
+  display: inline-block;
+  border-top: 0 transparent white;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 2rem;
 }
 
 .card-title {
-    font-size: 2rem;
-    font-weight: 900;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .card-text {
-    font-size: 16px;
-    color: gray;
-    margin: 1.5rem 2rem;
+  font-size: 16px;
+  color: gray;
+  margin: 1rem 2rem;
 }
 
 .card-price {
-    border: 0 transparent white;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    padding: 1rem;
-    background-color: hsl(225, 100%, 98%);
+  border: 0 transparent white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  background-color: hsl(225, 100%, 98%);
 }
 
 .card-price-text {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
 }
 
 .card-price-text #price {
-    color: gray;
+  color: gray;
+}
+
+.card-price-text #plan {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
 }
 
 .card-price-link {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  margin-left: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-price-link a {
+  color: blue;
 }
 
 button {
-    color: white;
-    background-color: hsl(245, 75%, 52%);
-    border: none;
-    border-radius: 15px;
-    padding: 0.5rem;
-    margin: 1rem 3rem;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 0;
+  margin: 1rem 2rem 0rem 2rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 3px hsl(224, 23%, 55%);
+}
+
+#cancel-order-link {
+  margin: 1.5rem 0;
+  text-decoration: none;
+  color: grey;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
 }
