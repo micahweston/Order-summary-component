@@ -5,3 +5,39 @@ body {
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 0 transparent white;
+    border-radius: 15px;
+}
+
+.card-img img{
+    width: 100%;
+    display: flex;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+button {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0 3rem;
+}
